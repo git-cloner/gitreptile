@@ -20,6 +20,9 @@ Last, cd request and start reptile
 cd request
 go run main.go -start="10000" -end="400000"
 ```
-you know that: if you want to know the top stars of github, you need access website like `https://github.com/search?q=stars%3A10000..400000`,10000-40000 is the range of the stars of repository belong to,so you can set up params of start and end to limit the range
+you know that: if you want to know the top stars of github, you need access website like `https://github.com/search?q=stars%3A10000..400000`,you can learn all rules from this website:`https://help.github.com/cn/github/searching-for-information-on-github/understanding-the-search-syntax`.
+Go back to business,10000-40000 is the range of the stars of repository belong to,so you can set up params of start and end to limit the range
 
 if you checkout some stars of repository which in range 1000 - 2000 ，you could run commond like `go run main.go -start="1000" -end="2000"`,then you could find file.txt which incloud the names of repository after 100000 second。
+
+ok, we have some files in result, you can download to use.
