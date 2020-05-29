@@ -28,6 +28,9 @@ func main() {
 			"message": "ping",
 		})
 	})
+	router.GET("/list", func(c *gin.Context) {
+		c.JSON(200, c.QueryArray("media"))
+	})
 	router.POST("/githubStar", Reptile)
 	router.Run(":4000")
 }
